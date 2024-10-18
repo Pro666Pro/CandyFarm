@@ -2,6 +2,18 @@ if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
+if invis == true then
+wait(0.1)
+
+fireclickdetector(workspace.Lobby["Ghost"].ClickDetector)
+
+wait(0.2)
+
+game.ReplicatedStorage.Ghostinvisibilityactivated:FireServer()
+
+wait(0.1)
+end
+
 repeat task.wait() until game.Players.LocalPlayer.Character ~= nil and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
 if game.Players.LocalPlayer.Character:FindFirstChild("entered") == nil then
     repeat task.wait()
