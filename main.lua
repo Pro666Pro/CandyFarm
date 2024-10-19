@@ -21,7 +21,7 @@ if game.Players.LocalPlayer.Character:FindFirstChild("entered") == nil then
         firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Lobby.Teleport1, 1)
     until game.Players.LocalPlayer.Character:FindFirstChild("entered")
 end
-wait(0.1)
+wait(0.5)
 for i, v in pairs(game.Workspace.CandyCorns:GetChildren()) do
                 if game.Players.LocalPlayer.Character:FindFirstChild("Head") and v:FindFirstChildWhichIsA("TouchTransmitter") then
                     firetouchinterest(game.Players.LocalPlayer.Character.Head, v, 0)
