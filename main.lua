@@ -7,11 +7,11 @@ wait(0.1)
 
 fireclickdetector(workspace.Lobby["Ghost"].ClickDetector)
 
-wait(0.2)
+wait(0.1)
 
 game.ReplicatedStorage.Ghostinvisibilityactivated:FireServer()
 
-wait(0.1)
+wait(0.3)
 end
 
 repeat task.wait() until game.Players.LocalPlayer.Character ~= nil and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
